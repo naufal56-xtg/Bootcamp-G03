@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BAB 4 Laporan Di MySQL</title>
+    <h1>BAB 4 LAPORAN DI MySQL</h1>
+  </head>
+  <body>
+    <h2>4.1 Laporan Di MySQL</h2>
+    <p style="text-align: justify; text-indent: 35px">
+      Laporan biasanya disajikan dalam berbagai bentuk (format file). Umumnya
+      bentuk laporan dapat berupa file Excel, PDF, HTML, XML, dsb. Pembuatan
+      laporan di MySQL akan lebih mudah jika kita menggunakan software bantuan.
+      Di sini akan disampaikan bagaimana membuat laporan dengan menggunakan
+      software SQLYog Community Edition.
+    </p>
+
+    <p style="text-align: justify; text-indent: 35px">
+      Laporan dari database umumnya didasarkan pada hasil (results) suatu
+      perintah query SELECT. Dengan SELECT kita dapat menyeleksi tampilan atau
+      hasil yang diinginkan dari tabel-tabel yang ada di database. SELECT dapat
+      berupa seleksi ke satu tabel atau beberapa tabel sekaligus (join antar
+      tabel).
+    </p>
+
+    <br />
+    <h2>4.2 Backup, Restore & Import Di MySQL</h2>
+    <p style="text-align: justify; text-indent: 35px">
+      Backup : Proses backup data merupakan hal yang sangat penting dilakukan.
+      Hal ini diperlukan untuk mengantisipasi hal-hal yang tidak diinginkan di
+      database kita, misalnya hilangnya data, rusaknya database dsb. Sebaiknya
+      proses backup dilakukan secara rutin dan terus-menerus. Backup di MySQL
+      sebenarnya ada 2 jenis, yaitu secara otomatis dan manual. Secara otomatis
+      kita dapat menggunakan konsep replication , dimana server database kita
+      secara real-time di-backup dengan server lain. Jika terdapat perubahan di
+      server utama kita, maka secara otomatis perubahannya akan di- replikasi ke
+      server kedua. Selain itu, kita juga dapat melakukan backup otomatis dengan
+      bantuan software tertentu. Biasanya kita dapat membuat schedule- backup.
+      Backup akan dijalankan oleh software secara otomatis setiap periode waktu
+      tertentu. Jenis kedua, kita dapat melakukan backup secara manual. Backup
+      manual dilakukan oleh database administrator dengan menjalankan
+      perintah-perintah tertentu. Backup manual ada dua bentuk, yaitu backup
+      dalam bentuk file database dan backup dalam bentuk perintah database.
+    </p>
+
+    <br />
+    <p style="text-align: justify; text-indent: 35px">
+      Restore merupakan prosedur yang dilaksanakan untuk mengembalikan file yang
+      dibackup ke database MySQL. Proses restore juga dapat dilakukan melalui
+      perintah SQL dengan memanfaatkan mysql dan juga bisa menggunakan software
+      bantuan.
+    </p>
+    <p style="text-align: justify; text-indent: 35px">
+      Jika menggunakan sintaks SQL, berikut ini contoh perintahnya : shell >
+      mysql –u user –p < backup.sql
+    </p>
+    <br />
+
+    <p style="text-align: justify; text-indent: 35px">
+      Adakalanya kita mempunyai data mentah dalam jumlah besar. Data dapat dalam
+      bentuk Excel, CVS, SQL, atau yang lainnya. Dan jika kita ingin meng-
+      import data tersebut, kita harus menyesuaikan format data tersebut ke
+      format yang dikenal oleh MySQL.
+    </p>
+  </body>
+</html>

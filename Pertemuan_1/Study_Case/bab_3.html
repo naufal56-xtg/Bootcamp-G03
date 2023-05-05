@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BAB 3 MySQL Lanjutan</title>
+    <h1>BAB 3 MySQL LANJUTAN</h1>
+  </head>
+  <body>
+    <h2>3.1 Administrasi & Keamanan Di MySQL</h2>
+    <p style="text-align: justify; text-indent: 35px">
+      Masalah keamanan (security) di MySQL merupakan hal yang tidak boleh
+      dianggap sepele apalagi dikesampingkan. MySQL merupakan software database
+      yang bersifat client-server, yang memungkinkan beberapa user dapat
+      mengakses server MySQL dari mana pun. Untuk itu, server MySQL harus
+      benar-benar aman dari akses (serangan) orang-orang yang tidak berhak.
+    </p>
+    <p style="text-align: justify; text-indent: 35px">
+      MySQL pada dasarnya merupakan sistem database yang aman. Di MySQL kita
+      dapat mengatur hak akses tiap user terhadap data di database. MySQL
+      memungkinkan kita mengatur hak akses user sampai pada tingkat kolom.
+      Artinya kita dapat mengatur kolom tertentu dapat diakses oleh user siapa
+      saja. Tentu, kita juga dapat mengatur hak akses user terhadap tabel, dan
+      database. Semua pengaturan hak akses (privileges) tersimpan di database
+      mysql yang secara default sudah ada di sistem MySQL. Di dalam database
+      mysql antara lain terdapat tabel-tabel sebagai berikut: user. Tabel ini
+      digunakan untuk menyimpan informasi user MySQL yang mencakup informasi
+      user, password dan host user, serta informasi hak akses user. db. Tabel
+      ini digunakan untuk menyimpan informasi mengenai hak akses user terhadap
+      database. host. Tabel ini digunakan untuk menyimpan daftar komputer (bisa
+      berupa alamat IP, nama komputer, atau %) yang berhak mengakses suatu
+      database. tables_priv. Tabel ini digunakan untuk menyimpan informasi
+      mengenai hak akses user terhadap tabel. Dengan kata lain menyimpan tabel
+      ini dapat diakses oleh siapa dengan hak akses apa saja. columns_priv.
+      Tabel ini digunakan untuk menyimpan informasi mengenai hak akses user
+      terhadap kolom. procs_priv. Tabel ini digunakan untuk menyimpan informasi
+      mengenai hak akses user terhadap procedure.
+    </p>
+    <br />
+
+    <h2>3.2 Trigger dan Views</h2>
+    <p style="text-align: justify; text-indent: 35px">
+      Trigger digunakan untuk memanggil satu atau beberapa perintah SQL secara
+      otomatis sebelum atau sesudah terjadi proses INSERT, UPDATE atau DELETE
+      dari suatu tabel. Sebagai contoh misalnya kita ingin menyimpan id
+      pelanggan secara otomatis ke tabel ‘log’ sebelum menghapus data di tabel
+      pelanggan.
+    </p>
+    <p style="text-align: justify; text-indent: 35px">
+      Triggers mulai dikenal di versi MySQL 5.0, dan di versi saat ini (5.0.4)
+      fungsionalitasnya sudah bertambah. Pada versi selanjutnya (5.1) pihak
+      pengembang MySQL berjanji akan lebih menguatkan (menambah) fitur trigger
+      ini.
+    </p>
+    <p style="text-align: justify; text-indent: 35px">
+        Trigger sering digunakan, antara lain untuk:
+
+        <ul>
+            <li>Melakukan update data otomatis jika terjadi perubahan. Contohnya adalah dalam sistem penjualan, jika dientri barang baru maka stock akan bertambah secara otomatis.</li>
+            <li>Trigger dapat digunakan untuk mengimplementasikan suatu sistem log. Setiap terjadi perubahan, secara otomatis akan menyimpan ke tabel log</li>
+            <li>Trigger dapat digunakan untuk melakukan validasi dan verifikasi data sebelum data tersebut disimpan.</li>
+        </ul>
+    
+    </p>
+    <p style="text-align: justify; text-indent: 35px">
+        Perintah untuk membuat Triggers :
+
+        CREATE TRIGGER name
+        [BEFORE|AFTER] [INSERT|UPDATE|DELETE]
+        ON tablename
+        FOR EACH ROW statement
+
+    </p>
+
+    <br>
+    <p style="text-align: justify; text-indent: 35px">
+        Views di MySQL mulai disediakan pada versi 5.0. Views merupakan suatu tampilan tabel virtual. Views berisi perintah SELECT ke tabel dalam database. Views dapat digunakan untuk mempermudah kita dalam pembuatan laporan atau tampilan database yang diinginkan dengan cepat. Dengan kata lain, views merupakan perintah SELECT yang disimpan, sehingga setiap saat kita membutuhkannya, kita dapat langsung memanggilnya tanpa perlu mengetikkan perintah SELECT kembali.
+    </p>
+
+    <p style="text-align: justify; text-indent: 35px">
+        View dibuat atau didefinisikan dengan menggunakan perintah CREATE VIEW. Bentuk umum perintah untuk membuat (mendefinisikan) view, sebagai berikut: 
+
+        CREATE
+        [OR REPLACE]
+        [ALGORITHM = {UNDEFINED | MERGE | TEMPTABLE}] [DEFINER = { user | CURRENT_USER }]
+        [SQL SECURITY { DEFINER | INVOKER }]
+        VIEW view_name [(column_list)]
+        AS select_statement
+        [WITH [CASCADED | LOCAL] CHECK OPTION]
+
+    </p>
+    <br />
+
+    <h2>3.3 Function & Stored Procedure</h2>
+    <p style="text-align: justify; text-indent: 35px">
+        Function dan Stored Procedure merupakan fitur utama yang paling penting di MySQL 5. Function dan Stored Procedure merupakan suatu kumpulan perintah atau statement yang disimpan dan dieksekusi di server database MySQL. Dengan SP (Stored Procedure), kita dapat menyusun program sederhana berbasis sintaks SQL untuk menjalankan fungsi tertentu. Hal ini menjadikan aplikasi yang kita buat lebih efektif dan efisien.
+        
+    </p>
+
+    <p style="text-align: justify; text-indent: 35px">
+        Berikut ini beberapa keuntungan menggunakan Stored Procedure:
+
+        <ul>
+            <li>
+                Lebih cepat. Hal ini karena kumpulan perintah query dijalankan langsung di server. Berbeda dengan jika dijalankan secara sekuensial di bahasa pemrograman, akan lebih lambat karena harus “bolak-balik” antara client dan server.
+            </li>
+            <li>
+                Menghilangkan duplikasi proses, pemeliharaan yang mudah. Pada dasarnya operasi yang terjadi di suatu aplikasi terhadap database adalah sama. Secara umum, di dalam aplikasi biasanya terdapat operasi untuk validasi data inputan, menambahkan record baru, mengubah record, menghapus record dan sebagainya. Dengan SP, mungkin kita dapat menghindari adanya duplikasi proses yang kurang lebih sama, sehingga pemeliharaannya juga jadi lebih mudah. 
+            </li>
+            <li>
+                Meningkatkan keamanan database. Dengan adanya SP, database akan lebih aman karena aplikasi yang memanggil SP tidak perlu mengetahui isi di dalamnya. Sebagai contoh, dalam proses menambahkan data (insert), kita membuat suatu SP khusus. Dengan demikian, saat client atau aplikasi akan menambahkan data (insert) maka tidak perlu tahu nama tabelnya, karena hanya cukup memanggil SP tersebut dengan mengirimkan parameter yang diinginkan.
+            </li>
+        </ul>
+    </p>
+  </body>
+</html>
