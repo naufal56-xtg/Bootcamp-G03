@@ -1,0 +1,17 @@
+Pertemuan 2 CSS
+
+3 Metode Untuk Menghubungkan HTML Dengan CSS :
+
+    - Inline
+    - Internal
+    - External
+
+Anatomi CSS :
+
+    Selector {
+
+        property : value;
+        property : value;
+        property : value;
+
+    }

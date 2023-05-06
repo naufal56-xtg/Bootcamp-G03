@@ -1,0 +1,25 @@
+10 Tag Display Inline ?
+
+1.a
+2.img
+3.input
+4.button
+5.strong
+6.span
+7.textarea
+8.time
+9.label
+10.select
+
+10 Tag Display Block ?
+
+1.h1 - h6
+2.p
+3.pre
+4.div
+5.header
+6.nav
+7.ul
+8.ol
+9.li
+10.table
