@@ -1,0 +1,14 @@
+img {
+    width: 500px;
+    height: 500px;
+    /* margin: 0; */
+    margin-left: 23%;
+}
+
+@media (max-width: 567px) {
+    img {
+        width: 95%;
+        /* margin: 0; */
+        margin-left: 10px;
+    }
+}
