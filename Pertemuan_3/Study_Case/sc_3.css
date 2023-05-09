@@ -69,7 +69,7 @@ p {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 8px;
-    border: 1px solid #4ECCA3;
+    border: 2px solid #4ECCA3;
     margin-left: 5px;
 }
 
@@ -80,4 +80,5 @@ p {
     width: 301px;
     height: 300px;
     display: flex;
+    
 }
