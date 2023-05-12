@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Bank Sederhana</title>
+
+    <link rel="stylesheet" href="css/sc-4.css" />
+  </head>
+  <body>
+    <marquee behavior="" direction=""><h1>Program Bank Sederhana</h1></marquee>
+    <div class="container">
+      <form>
+        <div class="saldo-masuk">
+          <label for="">Saldo Masuk : Rp,</label>
+          <input type="text" id="saldo_masuk" value="" />
+        </div>
+        <div class="saldo-keluar">
+          <label for="">Saldo Keluar : Rp,</label>
+          <input type="text" id="saldo_keluar" value="" />
+        </div>
+        <div class="total_saldo">
+          <label for="">Total Saldo : Rp,</label>
+          <input type="text" id="total_saldo" value="" />
+        </div>
+      </form>
+
+      <button class="btn-tarik" id="btn_tarik" onclick="tarik()">
+        TARIK TUNAI
+      </button>
+      <button class="btn-setor" onclick="setor()">SETOR TUNAI</button>
+    </div>
+
+    <script src="js/sc-4.js"></script>
+  </body>
+</html>

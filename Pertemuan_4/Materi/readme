@@ -1,0 +1,42 @@
+Belajar JavaScript
+
+- Metode Penghubung JS
+
+  1. Internal : <script></script>
+  2. External : <script src='test.js'></script>
+
+- Type Datas JavaScript
+
+  1. String : Tipe data berupa text, yang dibungkus oleh kutip dua (""), kutip satu (''), dan backtick (`).
+  2. Number : Tiper data berupa bilagan bulat & decimal.
+  3. Bolean : Tipe data yang bernilai true (benar) & false (salah).
+
+- Variabel : Tempat sementara untuk menyimpan tipe data.
+
+  1. let : let bersifat block scope (cakupan variabel yang dipisahkan oleh setiap block)
+  2. const : sama seperti let tetapi variabel const bersifat tetap (constanta)
+  3. var : var berfisat global scope (cakupan variabel dapat diakses di luar fuction untuk kelesuruhan kode)
+
+- Operator
+
+  1. Aritmatika
+  2. Penugasan
+  3. Perbandingan
+  4. Logika
+
+- Condition
+
+  1. if else
+  2. nested if
+  3. switch case
+
+- Looping (Perulangan)
+
+  1. while loop
+  2. for
+
+- Function (Fungsi) : Tempat untuk menyimpan fungsi dari program kita
+
+- Array : Tipe data yang befungsi untuk menampung banyak data
+
+- Object : Tipe data yang befungsi untuk menampung banyak variabel
