@@ -49,3 +49,16 @@
 .dark-mode-text-pass {
   color: #ffffff;
 }
+
+.dark-mode-text-forget-pass {
+  color: #ffffff;
+}
+
+.dark-mode-klik {
+  color: #c4c4c4;
+}
+
+.dark-mode-btn-login {
+  background: #ffffff;
+  color: #333333;
+}

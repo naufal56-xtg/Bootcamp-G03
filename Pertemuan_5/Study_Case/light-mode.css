@@ -179,8 +179,8 @@ body {
   font-weight: 300;
 }
 
-a {
-  text-decoration: none;
+a .klik {
+  color: #1e34ff;
 }
 
 .btn-login {

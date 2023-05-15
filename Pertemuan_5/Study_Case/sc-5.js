@@ -20,6 +20,9 @@ btnDark.addEventListener("click", function () {
   let darkTextLogin = document.querySelector(".text-login");
   let darkLineV = document.querySelector(".line-v");
   let darkLineV2 = document.querySelector(".line-v-2");
+  let darkForgetPass = document.querySelector(".text-forget-pass");
+  let darkButtonLogin = document.querySelector(".btn-login");
+  let darkButtonKlik = document.querySelector(".klik");
 
   svgDark.style.display = "flex";
   svgLight.style.display = "none";
@@ -38,6 +41,9 @@ btnDark.addEventListener("click", function () {
   darkTextLogin.classList.toggle("dark-mode-text-login");
   darkLineV.classList.toggle("dark-mode-line-v");
   darkLineV2.classList.toggle("dark-mode-line-v-2");
+  darkForgetPass.classList.toggle("dark-mode-text-forget-pass");
+  darkButtonLogin.classList.toggle("dark-mode-btn-login");
+  darkButtonKlik.classList.toggle("dark-mode-klik");
 });
 
 btnLight.addEventListener("click", function () {
@@ -54,6 +60,9 @@ btnLight.addEventListener("click", function () {
   let darkTextLogin = document.querySelector(".text-login");
   let darkLineV = document.querySelector(".line-v");
   let darkLineV2 = document.querySelector(".line-v-2");
+  let darkForgetPass = document.querySelector(".text-forget-pass");
+  let darkButtonLogin = document.querySelector(".btn-login");
+  let darkButtonKlik = document.querySelector(".klik");
 
   svgDark.style.display = "none";
   svgLight.style.display = "flex";
@@ -72,4 +81,7 @@ btnLight.addEventListener("click", function () {
   darkTextLogin.classList.remove("dark-mode-text-login");
   darkLineV.classList.remove("dark-mode-line-v");
   darkLineV2.classList.remove("dark-mode-line-v-2");
+  darkForgetPass.classList.remove("dark-mode-text-forget-pass");
+  darkButtonLogin.classList.remove("dark-mode-btn-login");
+  darkButtonKlik.classList.remove("dark-mode-klik");
 });
