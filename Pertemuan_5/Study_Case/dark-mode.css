@@ -1,0 +1,51 @@
+.dark-mode {
+  background-color: #171717;
+}
+
+.dark-mode-container-circle {
+  fill: #eeeeee;
+}
+
+.dark-mode-container-circle-1 {
+  background: #171717;
+}
+
+.dark-mode-container-box-login {
+  background: rgba(51, 51, 51, 0.75);
+}
+
+.dark-mode-container-box-image {
+  background: #333333;
+}
+
+.dark-mode-container-input-username {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode-container-input-password {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode-text-login {
+  color: #eeeeee;
+}
+
+.dark-mode-svg-username-fill {
+  fill: #ffffff;
+}
+
+.dark-mode-line-v {
+  border: 1px solid #ffffff;
+}
+
+.dark-mode-line-v-2 {
+  border: 1px solid #ffffff;
+}
+
+.dark-mode-text-user {
+  color: #ffffff;
+}
+
+.dark-mode-text-pass {
+  color: #ffffff;
+}

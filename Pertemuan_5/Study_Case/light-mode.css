@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: #eeeeee;
+}
+
+.container-circle {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.svg-circle {
+  fill: #00adb5;
+}
+
+.container-circle-1 {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  background: #eeeeee;
+  width: 20vh;
+  height: 10vh;
+  border-radius: 100px;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-dark,
+.btn-light {
+  position: relative;
+  margin-top: 5%;
+  width: 10vh;
+  border: none;
+  background: none;
+}
+
+.svg-sun {
+  position: absolute;
+  top: 0;
+  left: 2vh;
+}
+.svg-dark {
+  position: absolute;
+  top: -2.5vh;
+  right: -9vh;
+}
+
+.container-box-login {
+  position: absolute;
+  top: 20vh;
+  left: 40vh;
+  width: 120vh;
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+.container-box-image {
+  position: relative;
+  width: 60vh;
+  height: 70vh;
+  background: #00adb5;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.text-image {
+  margin-top: 10%;
+  margin-left: 10%;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.p-lorem {
+  margin-top: 10%;
+  margin-left: 10%;
+  position: absolute;
+  top: 18vh;
+  left: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.svg-person {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vh;
+}
+
+.text-login {
+  position: absolute;
+  top: 5vh;
+  right: 23vh;
+  color: #00adb5;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.container-input-username {
+  position: absolute;
+  top: 25vh;
+  right: 10vh;
+  width: 40vh;
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.container-input-password {
+  position: absolute;
+  top: 35vh;
+  right: 10vh;
+  width: 40vh;
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.svg-username,
+.svg-password {
+  position: absolute;
+  top: 2.1vh;
+  left: 2.3vh;
+}
+
+.svg-username-fill {
+  fill: #c4c4c4;
+}
+
+.line-v {
+  position: absolute;
+  top: 0;
+  left: 8vh;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 0px;
+  height: 7.5vh;
+}
+
+.line-v-2 {
+  position: absolute;
+  top: -2vh;
+  left: 5.7vh;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 0px;
+  height: 7.5vh;
+}
+
+.text-user {
+  position: absolute;
+  top: 2.5vh;
+  left: 10vh;
+  color: #c4c4c4;
+}
+
+.text-pass {
+  position: absolute;
+  top: 0.5vh;
+  left: 7.5vh;
+  color: #c4c4c4;
+}
+
+.text-forget-pass {
+  position: absolute;
+  top: 45vh;
+  right: 28vh;
+  color: #333333;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-login {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 53vh;
+  right: 17.5vh;
+  width: 25vh;
+  height: 7vh;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #aad8d3;
+  border-radius: 5px;
+}
+
+footer {
+  padding-bottom: 7%;
+}
+
+.text-copy {
+  position: absolute;
+  top: 170%;
+  bottom: -100%;
+  left: 46%;
+  margin-bottom: 5%;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.svg-list {
+  position: absolute;
+  left: 3%;
+  top: 55%;
+}
+
+.svg-fb,
+.svg-ig,
+.svg-wa {
+  margin-top: 5vh;
+}
+
+/* //TODO Dark MODE */
