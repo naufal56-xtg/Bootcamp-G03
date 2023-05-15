@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: #eeeeee;
+}
+
+.container-circle {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.svg-circle {
+  fill: #00adb5;
+}
+
+.container-circle-1 {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  background: #eeeeee;
+  width: 20vh;
+  height: 10vh;
+  border-radius: 100px;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-dark,
+.btn-light {
+  position: relative;
+  margin-top: 5%;
+  width: 10vh;
+  border: none;
+  background: none;
+}
+
+.svg-sun {
+  position: absolute;
+  top: 0;
+  left: 2vh;
+}
+.svg-dark {
+  position: absolute;
+  top: -2.5vh;
+  right: -9vh;
+}
+
+.container-box-login {
+  position: absolute;
+  top: 20vh;
+  left: 40vh;
+  width: 120vh;
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+.container-box-image {
+  position: relative;
+  width: 60vh;
+  height: 70vh;
+  background: #00adb5;
+  border-radius: 30px;
+}
+
+.text-image {
+  margin-left: 10%;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  color: #ffffff;
+}
+
+.p-lorem {
+  margin-left: 10%;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  color: #ffffff;
+}
+
+.svg-person {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* //TODO Dark MODE */
+
+.dark-mode {
+  background-color: #171717;
+}
+
+.dark-mode-container-circle {
+  fill: #eeeeee;
+}
+
+.dark-mode-container-circle-1 {
+  background: #171717;
+}

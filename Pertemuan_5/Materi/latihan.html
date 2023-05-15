@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan String & Template Literal</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      //   let dataBase = [
+      //     {
+      //       nama: "Maman",
+      //       hobi: "Mancing",
+      //     },
+      //     {
+      //       nama: "Samsul",
+      //       hobi: "Renang",
+      //     },
+      //     {
+      //       nama: "Santi",
+      //       hobi: "Masak",
+      //     },
+      //     {
+      //       nama: "Asep",
+      //       hobi: "Main Bola",
+      //     },
+      //   ];
+
+      function list(a, b, c) {
+        return `<ul>
+                  <li>Name : ${a} ${b}</li>
+                  <li>Email : ${c}</li>
+                  </ul>`;
+      }
+
+      fetch("https://reqres.in/api/users?page=2")
+        .then((response) => response.json())
+        .then((response) =>
+          response.data.map((data) => {
+            document.querySelector("#root").innerHTML += list(
+              data.first_name,
+              data.last_name,
+              data.email
+            );
+          })
+        );
+
+      //   fetch("https://reqres.in/api/users?page=2")
+      //     .then((response) => response.json())
+      //     .then((response) => {
+      //       let res = response.data;
+      //       res.map(function (data) {
+      //         let h1 = document.querySelector("#root");
+
+      //         h1.innerHTML += list(data.first_name, data.last_name, data.email);
+      //       });
+      //     });
+
+      // .then((response) => list(response.data));
+
+      //   dataBase.map((data) => {
+      //     document.querySelector("#root").innerHTML += list(data.first_name);
+      //   });
+      //   document.querySelector("#root").innerHTML = "<h1>Hello World</h1>";
+
+      //   let var1 = "Ini Kutip Dua";
+      //   let var2 = "Ini Kutip Satu";
+      //   let var3 = "Backtip";
+      //   console.log("Hello " + var1 + " Untuk String");
+      //   console.log("Hello " + var2);
+
+      //   //! Template Literal
+      //   console.log(`Hello  ${var3}`);
+      //   console.log(`Hello  ${1 + 1}`);
+
+      //   let waktu = "Siang";
+      //   console.log(
+      //     `${
+      //       waktu === "malam" ? "Sate" : waktu === "pagi" ? "Nasi Uduk" : "Roti"
+      //     }`
+      //   );
+    </script>
+  </body>
+</html>

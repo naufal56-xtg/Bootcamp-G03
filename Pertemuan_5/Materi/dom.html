@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan DOM</title>
+
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hallo</h1>
+    <h1>Dunia</h1>
+    <p id="test">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus
+      illum delectus cupiditate, vel illo laboriosam voluptatibus quasi
+      voluptates quas!
+    </p>
+    <ul class="coba">
+      <li>Satu</li>
+      <li>Dua</li>
+      <li>Tiga</li>
+    </ul>
+
+    <button>dark</button>
+    <!-- <button>light</button> -->
+
+    <script>
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", function () {
+        let element = document.body;
+        element.classList.toggle("dark-mode");
+      });
+
+      // btn.classList.toggle("mode");
+
+      //   let judul = document.querySelector("h1");
+
+      //   judul.style.color = "blue";
+      //   judul.style.backgroundColor = "lightgreen";
+
+      //   judul.innerHTML = "Test InnerHTML";
+
+      //   let list = document.querySelector("ul");
+
+      //   list.setAttribute("class", "tes2");
+      //   console.log(document.getElementById("test"));
+      //   console.log(document.getElementsByClassName("coba"));
+      //   console.log(document.getElementsByTagName("li"));
+
+      //   console.log(document.querySelector("li"));
+      //   console.log(document.querySelector(".coba"));
+      //   console.log(document.querySelector("#test"));
+      //   console.log(document.querySelector("h1"));
+    </script>
+  </body>
+</html>
